@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Scarecrow Farm Helper RP",
+    "description": "Cute pumpkin scarecrow that harvests crops and deposits to chests. Created by AllensCreations.",
+    "uuid": "2c074682-308e-4c79-bbc6-05be5321460b",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 80]
+  },
+  "modules": [
+    {
+      "description": "Scarecrow Farm Helper Resources",
+      "type": "resources",
+      "uuid": "da3d677a-5263-4440-a7dd-2c9ad2b9f19e",
+      "version": [1, 0, 0]
+    }
+  ]
+}

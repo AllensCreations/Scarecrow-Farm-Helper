@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "custom:scarecrow_helper",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/scarecrow"
+      },
+      "geometry": {
+        "default": "geometry.scarecrow_helper"
+      },
+      "animations": {
+        "idle": "animation.scarecrow.idle",
+        "walk": "animation.scarecrow.walk",
+        "harvest": "animation.scarecrow.harvest",
+        "look_at_target": "animation.scarecrow.look_at_target",
+        "movement_controller": "controller.animation.scarecrow.movement"
+      },
+      "scripts": {
+        "animate": [
+          "look_at_target",
+          "movement_controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#d9822b",
+        "overlay_color": "#5a8c2f"
+      }
+    }
+  }
+}

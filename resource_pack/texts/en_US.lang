@@ -1,0 +1,4 @@
+entity.custom:scarecrow_helper.name=Scarecrow Farm Helper
+item.spawn_egg.entity.custom:scarecrow_helper.name=Spawn Scarecrow Farm Helper
+pack.name=Scarecrow Farm Helper RP
+pack.description=A cute smiling pumpkin scarecrow that automatically tends crops and deposits harvests into chests!

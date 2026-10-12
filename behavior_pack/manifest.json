@@ -1,0 +1,36 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Scarecrow Farm Helper BP",
+    "description": "Autonomous farm helper: block-assembly summoning, mature crop auto-harvest & replant, and chest deposit by AllensCreations.",
+    "uuid": "02eda513-7ec7-4ed9-ad53-d9a4613c7756",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 80]
+  },
+  "modules": [
+    {
+      "description": "Scarecrow Farm Helper Data Module",
+      "type": "data",
+      "uuid": "e4fca941-e477-4b32-9149-81f323924207",
+      "version": [1, 0, 0]
+    },
+    {
+      "description": "Scarecrow Farm Helper Script Engine",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "78f84d09-b94b-49af-968f-5f70d05e6842",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0"
+    },
+    {
+      "uuid": "2c074682-308e-4c79-bbc6-05be5321460b",
+      "version": [1, 0, 0]
+    }
+  ]
+}
