@@ -9,7 +9,7 @@
         }
       ],
       "textures": [
-        "query.property('custom:role') == 1 ? Texture.forester : (query.property('custom:role') == 2 ? Texture.rancher : (query.property('custom:role') == 3 ? Texture.bonemealer : (query.property('custom:role') == 4 ? Texture.fisher : (query.property('custom:role') == 5 ? Texture.beekeeper : (query.property('custom:role') == 6 ? Texture.guard : Texture.farmer)))))"
+        "query.variant == 1 ? Texture.forester : (query.variant == 2 ? Texture.rancher : (query.variant == 3 ? Texture.bonemealer : (query.variant == 4 ? Texture.fisher : (query.variant == 5 ? Texture.beekeeper : (query.variant == 6 ? Texture.guard : Texture.farmer)))))"
       ]
     }
   }

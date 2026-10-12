@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "custom:craft_scarecrow_helper_lit"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "P",
+      "H"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:lit_pumpkin"
+      },
+      "H": {
+        "item": "minecraft:hay_block"
+      }
+    },
+    "result": {
+      "item": "custom:scarecrow_helper_spawn_egg",
+      "count": 1
+    }
+  }
+}

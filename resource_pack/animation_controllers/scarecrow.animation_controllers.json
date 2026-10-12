@@ -7,9 +7,7 @@
         "idle": {
           "animations": ["idle"],
           "transitions": [
-            { "sit": "query.property('custom:state') == 1" },
-            { "harvest": "query.property('custom:state') == 2" },
-            { "joy": "query.property('custom:state') == 3" },
+            { "sit": "query.is_sitting" },
             { "walk": "query.modified_distance_moved" }
           ],
           "blend_transition": 0.2
@@ -17,9 +15,7 @@
         "walk": {
           "animations": ["walk"],
           "transitions": [
-            { "sit": "query.property('custom:state') == 1" },
-            { "harvest": "query.property('custom:state') == 2" },
-            { "joy": "query.property('custom:state') == 3" },
+            { "sit": "query.is_sitting" },
             { "idle": "!query.modified_distance_moved" }
           ],
           "blend_transition": 0.2
@@ -28,25 +24,9 @@
           "animations": ["sit"],
           "transitions": [
             { "walk": "query.modified_distance_moved" },
-            { "harvest": "query.property('custom:state') == 2" },
-            { "joy": "query.property('custom:state') == 3" },
-            { "idle": "query.property('custom:state') != 1" }
+            { "idle": "!query.is_sitting" }
           ],
           "blend_transition": 0.3
-        },
-        "harvest": {
-          "animations": ["harvest"],
-          "transitions": [
-            { "idle": "query.property('custom:state') != 2" }
-          ],
-          "blend_transition": 0.1
-        },
-        "joy": {
-          "animations": ["joy"],
-          "transitions": [
-            { "idle": "query.property('custom:state') != 3" }
-          ],
-          "blend_transition": 0.2
         }
       }
     }

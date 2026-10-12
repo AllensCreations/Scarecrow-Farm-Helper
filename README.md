@@ -1,67 +1,68 @@
 # 🎃 Scarecrow Farm Helper (`custom:scarecrow_helper`)
-### *The 7 Chibi Farm Dwarfs (v1.1.0)*
+### *The 7 Chibi Farm Dwarfs — Pure Vanilla Edition (v1.2.0)*
 
 An adorable, zero-maintenance autonomous agricultural companion suite for **Minecraft Bedrock Edition**.
 
-Now upgraded into **The 7 Chibi Farm Dwarfs** with cute 2-dot bead eyes (no mouth), color-coded pointy beanie hats, tool-based role switching, physical crop navigation, 5-tick gathering delay, and relaxing sitting breaks!
+**NO EXPERIMENTS OR BETA APIS NEEDED!** This version is built using 100% stable Bedrock native features. Works everywhere including Realms, multiplayer servers, Android, iOS, Windows, and consoles without touching any experimental toggles!
 
 ---
 
-## ✨ Features in v1.1.0
+## ✨ Features (100% Vanilla Stable)
 
-- 🎃 **Cute Chibi Aesthetics:**
-  - Redesigned face: 2 dark bead eyes and soft blushing rosy cheeks with **no mouth**.
-  - 3D layered pointy dwarf beanies with white pom-poms.
-  - Waddling walk, idle sway, 5-tick harvest bow, relaxing cross-legged sit, wave, and joy hop animations!
+- 🚫 **No Experiments Required:**
+  - No "Beta APIs" toggle.
+  - No experimental gameplay warnings.
+  - Works out of the box in pure vanilla survival!
 
-- 🧙‍♂️ **The 7 Chibi Farm Dwarfs:**
-  Interact with the Scarecrow holding specific tools/items to assign their role and switch their beanie & outfit:
-  | Dwarf Role | Beanie & Outfit | Activation Tool / Item | Farm Specialty |
-  | :--- | :--- | :--- | :--- |
-  | **Farmer** | 🔴 Red | Hoe or Seeds | Walks to mature crops, 5-tick harvest & replant, deposits to chest |
-  | **Forester** | 🟤 Brown | Any Axe | Gathers dropped wood, saplings, apples, and sticks |
-  | **Rancher** | 🔵 Cyan | Shears or Lead | Tends sheep, shears wool safely, gathers eggs & feathers |
-  | **Bonemealer** | 🟢 Green | Bone Meal | Nurtures unripe crops with magical bone meal acceleration |
-  | **Fisher** | 🟦 Blue | Fishing Rod | Catches fresh fish near water ponds and deposits catch |
-  | **Beekeeper** | 🟡 Yellow | Honeycomb or Bottle | Tends full beehives/nests and harvests sweet honey |
-  | **Guard** | ⚪ Grey | Sword or Shield | Defends crops by knocking away monsters and pests |
+- 🌾 **Native Bedrock Farming AI:**
+  - Uses Minecraft's built-in C++ agricultural AI (`harvest_farm_block`).
+  - Automatically identifies mature crops (wheat, carrots, potatoes, beetroot), paths to them, gathers the harvest, and immediately replants the seeds!
+  - Also picks up any loose seeds, apples, saplings, or crops lying on the ground!
 
-- 🌾 **Physical Plant Navigation & 5-Tick Gathering:**
-  - When crops mature, the dwarf turns and waddles physically up to the plant.
-  - Pauses for **5 ticks** right at the plant, playing the cute harvest bow animation and sound before harvesting.
-  - Immediately replants the seed so your fields are never barren.
+- 🎒 **Backpack Inventory & Hopper Siphoning:**
+  - Has an internal **8-slot cute backpack inventory**.
+  - **Player Collection:** Right-click / tap the scarecrow to open its backpack and collect all gathered crops!
+  - **Automated Chest Siphoning:** Place a **Hopper** underneath where the scarecrow walks or sits; the hopper will automatically pull all harvested produce out of the scarecrow and funnel it into your chests!
 
-- 📦 **Smart Storage Auto-Deposit:**
-  - Gathers produce and walks to the nearest **Chest, Trapped Chest, or Barrel within 12 blocks**.
-  - Deposits goods with chime sounds and a joyful celebration hop!
+- 🪑 **Sitting & Resting Command:**
+  - **Sneak + Right-Click** to make your chibi sit down cross-legged on the ground or stand back up!
 
-- 🛋️ **Natural Sitting Breaks:**
-  - Whenever there are no active farm chores or ripe crops, the chibi dwarf takes an adorable sitting break on the ground.
-  - Automatically hops back up as soon as a crop matures or a task appears!
+- 🧙‍♂️ **The 7 Chibi Farm Dwarfs (Role Switching):**
+  Interact with the Scarecrow holding specific tools/items to change its role, outfit, and beanie:
+  | Dwarf | Beanie & Outfit | Activation Item |
+  | :--- | :--- | :--- |
+  | 🔴 **Farmer** | Red Beanie | **Hoe** or **Seeds** |
+  | 🟤 **Forester** | Brown Beanie | **Axe** |
+  | 🔵 **Rancher** | Cyan Beanie | **Shears** |
+  | 🟢 **Bonemealer** | Green Beanie | **Bone Meal** |
+  | 🟦 **Fisher** | Blue Beanie | **Fishing Rod** |
+  | 🟡 **Beekeeper** | Yellow Beanie | **Honeycomb** |
+  | ⚪ **Guard** | Grey Beanie | **Sword** |
 
 ---
 
-## 🛠️ Summoning Recipe
+## 🛠️ Crafting Recipe
+
+Craft directly in any crafting table (or 2×2 inventory):
 
 ```text
-       [ Carved Pumpkin ]
+       [ Carved Pumpkin ]  (or Jack o'Lantern)
                |
          [ Hay Bale ]
 ```
 
-Place **1 Hay Bale** on the ground and top with **1 Carved Pumpkin** (or Lit Pumpkin). The structure transforms into your living chibi companion!
+Yields **1 Scarecrow Farm Helper** spawn item. Place it on your farm and watch it start tending your crops!
 
 ---
 
-## 🚀 Installation
+## 🚀 Easy Installation
 
 1. Download **`Scarecrow_Farm_Helper.mcaddon`**.
-2. Tap or open the file with Minecraft Bedrock Edition to auto-import both packs.
+2. Tap the file to open with Minecraft Bedrock Edition (imports both packs automatically).
 3. In world settings:
-   - Enable **Scarecrow Farm Helper RP**.
-   - Enable **Scarecrow Farm Helper BP**.
-   - Enable **Beta APIs** under Experiments.
-4. Build the Hay Bale + Pumpkin structure, hand them their tools, and watch your 7 dwarfs tend your farm!
+   - Activate **Scarecrow Farm Helper RP**.
+   - Activate **Scarecrow Farm Helper BP**.
+4. **Done!** Leave **Experiments OFF**. Enter your world, craft your scarecrow, and enjoy your automated farm!
 
 ---
 
