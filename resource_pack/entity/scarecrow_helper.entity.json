@@ -7,6 +7,13 @@
         "default": "entity_alphatest"
       },
       "textures": {
+        "farmer": "textures/entity/scarecrow_farmer",
+        "forester": "textures/entity/scarecrow_forester",
+        "rancher": "textures/entity/scarecrow_rancher",
+        "bonemealer": "textures/entity/scarecrow_bonemealer",
+        "fisher": "textures/entity/scarecrow_fisher",
+        "beekeeper": "textures/entity/scarecrow_beekeeper",
+        "guard": "textures/entity/scarecrow_guard",
         "default": "textures/entity/scarecrow"
       },
       "geometry": {
@@ -16,6 +23,9 @@
         "idle": "animation.scarecrow.idle",
         "walk": "animation.scarecrow.walk",
         "harvest": "animation.scarecrow.harvest",
+        "sit": "animation.scarecrow.sit",
+        "wave": "animation.scarecrow.wave",
+        "joy": "animation.scarecrow.joy",
         "look_at_target": "animation.scarecrow.look_at_target",
         "movement_controller": "controller.animation.scarecrow.movement"
       },
@@ -26,7 +36,7 @@
         ]
       },
       "render_controllers": [
-        "controller.render.default"
+        "controller.render.scarecrow"
       ],
       "spawn_egg": {
         "base_color": "#d9822b",

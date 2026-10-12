@@ -1,38 +1,43 @@
 # 🎃 Scarecrow Farm Helper (`custom:scarecrow_helper`)
+### *The 7 Chibi Farm Dwarfs (v1.1.0)*
 
-An adorable, zero-maintenance autonomous agricultural companion for **Minecraft Bedrock Edition**.
+An adorable, zero-maintenance autonomous agricultural companion suite for **Minecraft Bedrock Edition**.
 
-Built with a cute chibi semi-carved smiling pumpkin aesthetic, custom waddle animations, in-world golem-style summoning ritual, automatic crop harvesting & replanting, and smart deposit into nearby chests and barrels!
+Now upgraded into **The 7 Chibi Farm Dwarfs** with cute 2-dot bead eyes (no mouth), color-coded pointy beanie hats, tool-based role switching, physical crop navigation, 5-tick gathering delay, and relaxing sitting breaks!
 
 ---
 
-## ✨ Features
+## ✨ Features in v1.1.0
 
-- 🎃 **In-World Summoning Ritual:**
-  - Place **1 Hay Bale** (`minecraft:hay_block`) on the ground.
-  - Place **1 Carved Pumpkin** (`minecraft:carved_pumpkin` or `minecraft:lit_pumpkin`) directly on top.
-  - The structure pops with festive sparkles, bursts of heart particles, and instantly awakens your living Scarecrow Farm Helper!
-- 🌾 **Autonomous Crop Harvesting & Replanting:**
-  - Continuously tends mature crops within a 6-block radius.
-  - Gathers produce and immediately replants fresh seeds in the farmland.
+- 🎃 **Cute Chibi Aesthetics:**
+  - Redesigned face: 2 dark bead eyes and soft blushing rosy cheeks with **no mouth**.
+  - 3D layered pointy dwarf beanies with white pom-poms.
+  - Waddling walk, idle sway, 5-tick harvest bow, relaxing cross-legged sit, wave, and joy hop animations!
+
+- 🧙‍♂️ **The 7 Chibi Farm Dwarfs:**
+  Interact with the Scarecrow holding specific tools/items to assign their role and switch their beanie & outfit:
+  | Dwarf Role | Beanie & Outfit | Activation Tool / Item | Farm Specialty |
+  | :--- | :--- | :--- | :--- |
+  | **Farmer** | 🔴 Red | Hoe or Seeds | Walks to mature crops, 5-tick harvest & replant, deposits to chest |
+  | **Forester** | 🟤 Brown | Any Axe | Gathers dropped wood, saplings, apples, and sticks |
+  | **Rancher** | 🔵 Cyan | Shears or Lead | Tends sheep, shears wool safely, gathers eggs & feathers |
+  | **Bonemealer** | 🟢 Green | Bone Meal | Nurtures unripe crops with magical bone meal acceleration |
+  | **Fisher** | 🟦 Blue | Fishing Rod | Catches fresh fish near water ponds and deposits catch |
+  | **Beekeeper** | 🟡 Yellow | Honeycomb or Bottle | Tends full beehives/nests and harvests sweet honey |
+  | **Guard** | ⚪ Grey | Sword or Shield | Defends crops by knocking away monsters and pests |
+
+- 🌾 **Physical Plant Navigation & 5-Tick Gathering:**
+  - When crops mature, the dwarf turns and waddles physically up to the plant.
+  - Pauses for **5 ticks** right at the plant, playing the cute harvest bow animation and sound before harvesting.
+  - Immediately replants the seed so your fields are never barren.
+
 - 📦 **Smart Storage Auto-Deposit:**
-  - Locates the nearest **Chest, Trapped Chest, or Barrel** within **12 blocks**.
-  - Deposits harvested crops directly into container storage with audio chimes and particle feedback.
-  - Safely drops items at its feet if no chest is available or storage is full.
-- 🌱 **Expanded Agriculture Support:**
-  - 🌾 Wheat (`minecraft:wheat`)
-  - 🥕 Carrots (`minecraft:carrots`)
-  - 🥔 Potatoes (`minecraft:potatoes` with rare poisonous potato drops)
-  - 🍠 Beetroot (`minecraft:beetroot`)
-  - 🍄 Nether Wart (`minecraft:nether_wart`)
-  - 🍓 Sweet Berry Bushes (`minecraft:sweet_berry_bush`)
-  - 🍫 Cocoa Beans (`minecraft:cocoa`)
-- 🧸 **Chibi Visuals & Cute Animations:**
-  - Oversized semi-carved grinning pumpkin head, cute straw torso with rosy cheeks, red neckerchief, stick arms, and straw boots.
-  - Custom waddling walk animation, idle breathing sway, and crop harvesting bow.
-  - Interactive: Tap / right-click the scarecrow to receive hearts and friendly actionbar greetings!
-- 🛡️ **Peaceful & Persistent:**
-  - Passive entity that will never despawn. Immune to fall and drowning damage.
+  - Gathers produce and walks to the nearest **Chest, Trapped Chest, or Barrel within 12 blocks**.
+  - Deposits goods with chime sounds and a joyful celebration hop!
+
+- 🛋️ **Natural Sitting Breaks:**
+  - Whenever there are no active farm chores or ripe crops, the chibi dwarf takes an adorable sitting break on the ground.
+  - Automatically hops back up as soon as a crop matures or a task appears!
 
 ---
 
@@ -44,34 +49,19 @@ Built with a cute chibi semi-carved smiling pumpkin aesthetic, custom waddle ani
          [ Hay Bale ]
 ```
 
-Once placed, both blocks transform into the living Scarecrow helper.
-
----
-
-## 📦 Supported Crops & Yields
-
-| Crop | Mature Stage | Replants | Deposited Produce |
-| :--- | :--- | :--- | :--- |
-| **Wheat** | Age 7 | Seed | 1 Wheat + extra seeds |
-| **Carrot** | Age 7 | Carrot | 2–3 Carrots |
-| **Potato** | Age 7 | Potato | 2–3 Potatoes (+ poisonous potato chance) |
-| **Beetroot** | Age 7 | Beetroot Seed | 1 Beetroot + extra seeds |
-| **Nether Wart** | Age 3 | Nether Wart | 2–3 Nether Warts |
-| **Sweet Berries** | Age 2–3 | Age 1 Bush | 1–3 Sweet Berries |
-| **Cocoa Beans** | Age 2 | Age 0 Pod | 2–3 Cocoa Beans |
+Place **1 Hay Bale** on the ground and top with **1 Carved Pumpkin** (or Lit Pumpkin). The structure transforms into your living chibi companion!
 
 ---
 
 ## 🚀 Installation
 
 1. Download **`Scarecrow_Farm_Helper.mcaddon`**.
-2. Tap or double-click the file to open with Minecraft Bedrock Edition.
-3. The game will automatically import both the Behavior Pack and Resource Pack.
-4. When creating or editing a world:
-   - Enable **Scarecrow Farm Helper RP** under Resource Packs.
-   - Enable **Scarecrow Farm Helper BP** under Behavior Packs.
-   - Ensure **Beta APIs** (Script API) is turned ON under Experiments.
-5. Enter the world, build the Hay Bale + Carved Pumpkin structure, and enjoy your automated farm!
+2. Tap or open the file with Minecraft Bedrock Edition to auto-import both packs.
+3. In world settings:
+   - Enable **Scarecrow Farm Helper RP**.
+   - Enable **Scarecrow Farm Helper BP**.
+   - Enable **Beta APIs** under Experiments.
+4. Build the Hay Bale + Pumpkin structure, hand them their tools, and watch your 7 dwarfs tend your farm!
 
 ---
 

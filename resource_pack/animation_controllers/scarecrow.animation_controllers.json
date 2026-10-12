@@ -5,24 +5,46 @@
       "initial_state": "idle",
       "states": {
         "idle": {
-          "animations": [
-            "idle"
-          ],
+          "animations": ["idle"],
           "transitions": [
-            {
-              "walk": "query.modified_distance_moved"
-            }
+            { "sit": "query.property('custom:state') == 1" },
+            { "harvest": "query.property('custom:state') == 2" },
+            { "joy": "query.property('custom:state') == 3" },
+            { "walk": "query.modified_distance_moved" }
           ],
           "blend_transition": 0.2
         },
         "walk": {
-          "animations": [
-            "walk"
-          ],
+          "animations": ["walk"],
           "transitions": [
-            {
-              "idle": "!query.modified_distance_moved"
-            }
+            { "sit": "query.property('custom:state') == 1" },
+            { "harvest": "query.property('custom:state') == 2" },
+            { "joy": "query.property('custom:state') == 3" },
+            { "idle": "!query.modified_distance_moved" }
+          ],
+          "blend_transition": 0.2
+        },
+        "sit": {
+          "animations": ["sit"],
+          "transitions": [
+            { "walk": "query.modified_distance_moved" },
+            { "harvest": "query.property('custom:state') == 2" },
+            { "joy": "query.property('custom:state') == 3" },
+            { "idle": "query.property('custom:state') != 1" }
+          ],
+          "blend_transition": 0.3
+        },
+        "harvest": {
+          "animations": ["harvest"],
+          "transitions": [
+            { "idle": "query.property('custom:state') != 2" }
+          ],
+          "blend_transition": 0.1
+        },
+        "joy": {
+          "animations": ["joy"],
+          "transitions": [
+            { "idle": "query.property('custom:state') != 3" }
           ],
           "blend_transition": 0.2
         }

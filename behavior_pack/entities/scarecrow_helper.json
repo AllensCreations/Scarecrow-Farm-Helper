@@ -5,7 +5,21 @@
       "identifier": "custom:scarecrow_helper",
       "is_spawnable": true,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "properties": {
+        "custom:role": {
+          "type": "int",
+          "range": [0, 6],
+          "default": 0,
+          "client_sync": true
+        },
+        "custom:state": {
+          "type": "int",
+          "range": [0, 3],
+          "default": 0,
+          "client_sync": true
+        }
+      }
     },
     "components": {
       "minecraft:type_family": {
@@ -17,7 +31,7 @@
       },
       "minecraft:collision_box": {
         "width": 0.6,
-        "height": 1.1
+        "height": 1.2
       },
       "minecraft:health": {
         "max": 20,
@@ -25,7 +39,7 @@
       },
       "minecraft:physics": {},
       "minecraft:movement": {
-        "value": 0.22
+        "value": 0.23
       },
       "minecraft:movement.basic": {},
       "minecraft:navigation.walk": {
