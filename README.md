@@ -1,5 +1,5 @@
 # 🎃 Scarecrow Farm Helper (`custom:scarecrow_helper`)
-### *The 7 Chibi Farm Dwarfs — Authentic Hay Bale Edition (v1.4.0)*
+### *The 7 Chibi Farm Dwarfs — Mini Tools Edition (v1.5.0)*
 
 An adorable, zero-maintenance autonomous agricultural companion suite for **Minecraft Bedrock Edition**.
 
@@ -7,31 +7,39 @@ An adorable, zero-maintenance autonomous agricultural companion suite for **Mine
 
 ---
 
-## 🌟 What's New & Upgraded in v1.4.0
+## 🌟 What's New & Upgraded in v1.5.0
 
-- 🌾 **Authentic Minecraft Hay Bale & Pumpkin Aesthetics:**
-  - **Torso & Body:** Golden dried wheat straw grain with the iconic **Red Twine Ribbon Bands** wrapped around the torso just like a real Minecraft Hay Bale block!
-  - **Head:** Rich vanilla pumpkin orange with vertical rib grooves, 2-dot carved dark bead eyes with warm carved amber rims, and soft blush cheeks.
-  - **7 Dwarf Beanies:** Authentic rustic straw beanie for Jobless default, and vibrant signature colors for the 7 roles (Farmer=Red, Forester=Brown, Rancher=Cyan, Bonemealer=Green, Fisher=Blue, Beekeeper=Yellow, Guard=Grey)!
+- 🧸 **0.8x Mini Chibi Scale:**
+  - Scaled down into an adorable **1-block-tall garden dwarf / fairy helper**! Perfect miniature proportions that look cute running around your crops.
 
-- 🎁 **Fixed Custom Item Icon Display:**
-  - Standardized `item_texture.json` with vanilla atlas integration and string icon referencing.
-  - Features an authentic 16×16 pixel-art miniature scarecrow sprite with pumpkin head and red twine ribbon straw torso.
-  - Shows clear display name: **"Scarecrow Farm Helper"**.
+- 🪓 **7 3D Held Job Tools & Props:**
+  Each dwarf visibly holds a miniature tool in their right hand that naturally swings with their animations:
+  | Dwarf Role | Color & Beanie | 3D Held Hand Prop | Specialty |
+  | :--- | :--- | :--- | :--- |
+  | 🌼 **Jobless** | Natural Straw | **Yellow Dandelion Flower** | Peaceful garden companion; waddles and rests. |
+  | 🌾 **Farmer** | 🔴 Red | **Golden Hoe** | Harvests mature crops and replants seeds! |
+  | 🪓 **Forester** | 🟤 Brown | **Lumberjack Axe** | Gathers dropped wood, saplings, apples, and sticks. |
+  | 🐑 **Rancher** | 🔵 Cyan | **Iron Shears** | Tends sheep and farm animals. |
+  | 🌱 **Bonemealer** | 🟢 Green | **Green Leaf Sprout** | Nurtures crops with growth acceleration. |
+  | 🎣 **Fisher** | 🟦 Blue | **Bamboo Fishing Rod** | Fish tender by ponds. |
+  | 🐝 **Beekeeper** | 🟡 Yellow | **Honey Pot Jar** | Cares for beehives and nests. |
+  | 🛡️ **Guard** | ⚪ Grey | **Iron Sword** | Farm protector against pests. |
+
+- 🎩 **100% Solid Hat Back Fix:**
+  - Completely repainted 360° UV mapping for all hat faces, closing all transparent gaps and eliminating back-face inverted rendering and Z-fighting!
+
+- 🌾 **Expanded Food Agriculture & Berry Immunity:**
+  - Farm row crops (Wheat, Carrots, Potatoes, Beetroot).
+  - Tends Melons, Pumpkins, Sugarcane, Bamboo, Mushrooms, and Nether Wart.
+  - Immune to contact/berry prickle damage when harvesting Sweet Berry bushes!
+  - Excess seeds can be funneled into nearby **Composters** for free Bone Meal!
 
 - 🔘 **Interactive "Give a Job" & "Change Job" Cycling:**
-  - **No tools needed in hand!** Just walk up and tap the button:
-    - On **Jobless (Default)**: Button shows **"Give a Job"** $\rightarrow$ Promotes to 🌾 **Farmer**!
-    - On any active role: Button shows **"Change Job"** $\rightarrow$ Cycles to the next dwarf role:
-      🌾 Farmer $\rightarrow$ 🪓 Forester $\rightarrow$ 🐑 Rancher $\rightarrow$ 🌱 Bonemealer $\rightarrow$ 🎣 Fisher $\rightarrow$ 🐝 Beekeeper $\rightarrow$ 🛡️ Guard $\rightarrow$ 🌾 Farmer!
-    - Each role change plays a cheerful chime sound!
+  - Walk up and tap **"Give a Job"** to promote to Farmer!
+  - Tap **"Change Job"** to cycle through all 7 dwarf roles with a chime sound!
 
 - 🎒 **Hopper Auto-Siphon Storage:**
-  - No intrusive backpack UI popping up while interacting.
-  - Simply place a **Hopper** underneath where the scarecrow walks or rests; the hopper automatically siphons all harvested produce directly into your chests!
-
-- 🐛 **100% Bug-Free Animations:**
-  - Playful high-bounce waddle walk, lively swinging arms, and cross-legged sitting breaks without any animation loop glitches.
+  - Place a **Hopper** underneath to auto-pull all harvested crops into chests without any UI popup interruptions!
 
 ---
 

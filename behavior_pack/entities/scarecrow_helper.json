@@ -47,6 +47,14 @@
           "max_seconds_before_search": 1,
           "search_cooldown_max_seconds": 0,
           "speed_multiplier": 0.85
+        },
+        "minecraft:behavior.pickup_items": {
+          "priority": 3,
+          "max_dist": 8,
+          "goal_radius": 1.5,
+          "speed_multiplier": 0.85,
+          "pickup_based_on_chance": false,
+          "can_pickup_any_item": true
         }
       },
       "scarecrow:forester": {
@@ -89,6 +97,9 @@
       }
     },
     "components": {
+      "minecraft:scale": {
+        "value": 0.8
+      },
       "minecraft:variant": {
         "value": 0
       },
@@ -103,8 +114,8 @@
         ]
       },
       "minecraft:collision_box": {
-        "width": 0.6,
-        "height": 1.2
+        "width": 0.5,
+        "height": 0.96
       },
       "minecraft:health": {
         "max": 20,
@@ -129,6 +140,10 @@
           },
           {
             "cause": "drowning",
+            "deals_damage": false
+          },
+          {
+            "cause": "contact",
             "deals_damage": false
           }
         ]
