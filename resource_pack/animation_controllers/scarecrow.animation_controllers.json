@@ -5,26 +5,41 @@
       "initial_state": "idle",
       "states": {
         "idle": {
-          "animations": ["idle"],
-          "transitions": [
-            { "sit": "query.is_sitting" },
-            { "walk": "query.modified_distance_moved" }
+          "animations": [
+            "idle"
           ],
-          "blend_transition": 0.2
+          "transitions": [
+            {
+              "sit": "query.skin_id == 1"
+            },
+            {
+              "walk": "query.ground_speed > 0.05 && query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.3
         },
         "walk": {
-          "animations": ["walk"],
+          "animations": [
+            "walk"
+          ],
           "transitions": [
-            { "sit": "query.is_sitting" },
-            { "idle": "!query.modified_distance_moved" }
+            {
+              "sit": "query.skin_id == 1"
+            },
+            {
+              "idle": "query.ground_speed <= 0.05"
+            }
           ],
           "blend_transition": 0.2
         },
         "sit": {
-          "animations": ["sit"],
+          "animations": [
+            "sit"
+          ],
           "transitions": [
-            { "walk": "query.modified_distance_moved" },
-            { "idle": "!query.is_sitting" }
+            {
+              "idle": "query.skin_id == 0"
+            }
           ],
           "blend_transition": 0.3
         }

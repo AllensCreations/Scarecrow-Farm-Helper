@@ -9,7 +9,7 @@
         }
       ],
       "textures": [
-        "query.variant == 1 ? Texture.forester : (query.variant == 2 ? Texture.rancher : (query.variant == 3 ? Texture.bonemealer : (query.variant == 4 ? Texture.fisher : (query.variant == 5 ? Texture.beekeeper : (query.variant == 6 ? Texture.guard : Texture.farmer)))))"
+        "query.variant == 1 ? Texture.farmer : (query.variant == 2 ? Texture.forester : (query.variant == 3 ? Texture.rancher : (query.variant == 4 ? Texture.bonemealer : (query.variant == 5 ? Texture.fisher : (query.variant == 6 ? Texture.beekeeper : (query.variant == 7 ? Texture.guard : Texture.default))))))"
       ]
     }
   }

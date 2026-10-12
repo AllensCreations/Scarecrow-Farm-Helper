@@ -2,9 +2,9 @@
   "format_version": 2,
   "header": {
     "name": "Scarecrow Farm Helper RP",
-    "description": "Pure Vanilla Stable (No Experiments Needed): 2-dot cute faces, color-coded beanie hats, and expressive animations. Created by AllensCreations.",
+    "description": "Pure Vanilla Stable (No Experiments Needed): 100% bug-free animations, playful bouncing walk, and jobless straw default. Created by AllensCreations.",
     "uuid": "2c074682-308e-4c79-bbc6-05be5321460b",
-    "version": [1, 2, 0],
+    "version": [1, 2, 1],
     "min_engine_version": [1, 20, 80]
   },
   "modules": [
@@ -12,7 +12,7 @@
       "description": "Scarecrow Farm Helper Resources",
       "type": "resources",
       "uuid": "da3d677a-5263-4440-a7dd-2c9ad2b9f19e",
-      "version": [1, 2, 0]
+      "version": [1, 2, 1]
     }
   ]
 }
