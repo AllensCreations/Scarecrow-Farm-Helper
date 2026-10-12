@@ -1,0 +1,9 @@
+{
+  "resource_pack_name": "Scarecrow Farm Helper RP",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "scarecrow_item": {
+      "textures": "textures/items/scarecrow_item"
+    }
+  }
+}

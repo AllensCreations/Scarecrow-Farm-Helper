@@ -1,5 +1,5 @@
 # 🎃 Scarecrow Farm Helper (`custom:scarecrow_helper`)
-### *The 7 Chibi Farm Dwarfs — Bug-Free Edition (v1.2.1)*
+### *The 7 Chibi Farm Dwarfs — Custom Item Edition (v1.3.0)*
 
 An adorable, zero-maintenance autonomous agricultural companion suite for **Minecraft Bedrock Edition**.
 
@@ -7,38 +7,35 @@ An adorable, zero-maintenance autonomous agricultural companion suite for **Mine
 
 ---
 
-## 🛠️ What's New & Fixed in v1.2.1
+## 🌟 What's New in v1.3.0
 
-- 🐛 **Fixed Sitting/Standing Rapid Spam:**
-  - Completely resolved the animation loop bug where the entity would glitch and rapidly spam sitting/standing while walking.
-  - Rewrote animation controllers using clean `query.ground_speed` and dedicated rest states.
+- 🎁 **Dedicated Custom Item (`custom:scarecrow_helper`):**
+  - Custom pixel-art 2D sprite icon: cute pumpkin doll with straw hat, red neckerchief, and stick arms!
+  - Place it directly on any block to spawn your living chibi scarecrow companion.
+  - Stacks up to 16 in your inventory.
+  - Broken/killed scarecrows safely drop the custom item back into your hands.
 
-- 🏃‍♂️ **Playful Bouncing Walk:**
-  - Adorable high-bounce waddle step, lively swinging arms, and cheerful head tilt.
+- 🛠️ **Survival Crafting Recipe:**
+  - Place **1 Carved Pumpkin** (or Jack o'Lantern) on top of **1 Hay Bale** in any crafting table or 2×2 inventory to craft the **Scarecrow Farm Helper** custom item!
+
+- 🐛 **100% Bug-Free Animations:**
+  - Zero sitting/standing loop glitching.
+  - Playful high-bounce waddle step, lively swinging arms, and cheerful head bobbing.
 
 - 🧸 **Jobless Default Type:**
-  - Newly summoned or crafted scarecrows start with **NO JOB**!
-  - They waddle around playfully, explore, and rest like an adorable companion.
-  - They will **only** take on a job when you hand them an item via the interactive **"Give Job"** button prompt!
+  - Placed scarecrows spawn with **NO JOB** (neutral straw outfit and rustic straw beanie).
+  - Wanders, explores, and rests like an adorable farm pet until you assign it a role!
+
+- 🔘 **Interactive "Give Job" & "Open Backpack" Prompts:**
+  - Look at the scarecrow holding any tool (Hoe, Seeds, Axe, Shears, Bone Meal, Fishing Rod, Honeycomb, Sword) to see the **"Give Job"** button prompt!
+  - Look at the scarecrow with an empty hand to see the **"Open Backpack"** button prompt to open its 8-slot storage.
 
 - 🪑 **Natural Resting Cycle:**
   - Wanders peacefully for 12–16 seconds.
   - Sits down cross-legged on the ground for a restful 5–7 second break before standing back up.
 
-- 🎒 **Backpack & Automated Chest Funneling:**
-  - Tap or right-click to open its **8-slot backpack** via the **"Open Backpack"** prompt.
-  - Place a **Hopper** underneath to auto-pull all harvested crops into chests!
-
-- 🧙‍♂️ **The 7 Dwarf Roles (Interactive "Give Job" Prompt):**
-  | Dwarf Role | Beanie & Outfit | Activation Item | Specialty |
-  | :--- | :--- | :--- | :--- |
-  | 🌾 **Farmer** | 🔴 Red Beanie | **Hoe** or **Seeds** | Autonomously harvests ripe crops and replants seeds! |
-  | 🪓 **Forester** | 🟤 Brown Beanie | **Axe** | Collects dropped wood, saplings, apples, and sticks. |
-  | 🐑 **Rancher** | 🔵 Cyan Beanie | **Shears** | Tends sheep and farm animals. |
-  | 🌱 **Bonemealer** | 🟢 Green Beanie | **Bone Meal** | Nurtures crops with growth acceleration. |
-  | 🎣 **Fisher** | 🟦 Blue Beanie | **Fishing Rod** | Hangs out by water ponds. |
-  | 🐝 **Beekeeper** | 🟡 Yellow Beanie | **Honeycomb** | Cares for beehives and nests. |
-  | 🛡️ **Guard** | ⚪ Grey Beanie | **Sword** | Farm defender against pests. |
+- 🚫 **Zero Experiments Needed:**
+  - Works out of the box in standard survival, Realms, and servers!
 
 ---
 
@@ -50,7 +47,7 @@ An adorable, zero-maintenance autonomous agricultural companion suite for **Mine
          [ Hay Bale ]
 ```
 
-Craft in any crafting table or your 2×2 inventory to receive your Scarecrow Farm Helper!
+Yields **1 Scarecrow Farm Helper** custom item.
 
 ---
 
@@ -59,7 +56,7 @@ Craft in any crafting table or your 2×2 inventory to receive your Scarecrow Far
 1. Download **`Scarecrow_Farm_Helper.mcaddon`**.
 2. Tap the file to open with Minecraft Bedrock Edition.
 3. Activate **Scarecrow Farm Helper RP** and **BP** in your world.
-4. Leave **Experiments OFF**! Craft your chibi and enjoy!
+4. Leave **Experiments OFF**! Craft your scarecrow item and enjoy!
 
 ---
 
