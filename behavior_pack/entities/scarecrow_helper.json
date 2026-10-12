@@ -170,170 +170,90 @@
           {
             "on_interact": {
               "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:wooden_hoe"
+                "test": "is_variant",
+                "value": 0
               },
               "event": "scarecrow:set_farmer"
             },
-            "interact_text": "action.interact.assign_role",
+            "interact_text": "action.interact.give_job",
             "play_sounds": "random.levelup"
           },
           {
             "on_interact": {
               "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:iron_hoe"
-              },
-              "event": "scarecrow:set_farmer"
-            },
-            "interact_text": "action.interact.assign_role",
-            "play_sounds": "random.levelup"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:diamond_hoe"
-              },
-              "event": "scarecrow:set_farmer"
-            },
-            "interact_text": "action.interact.assign_role",
-            "play_sounds": "random.levelup"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:wheat_seeds"
-              },
-              "event": "scarecrow:set_farmer"
-            },
-            "interact_text": "action.interact.assign_role",
-            "play_sounds": "random.levelup"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:iron_axe"
+                "test": "is_variant",
+                "value": 1
               },
               "event": "scarecrow:set_forester"
             },
-            "interact_text": "action.interact.assign_role",
+            "interact_text": "action.interact.change_job",
             "play_sounds": "random.levelup"
           },
           {
             "on_interact": {
               "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:wooden_axe"
-              },
-              "event": "scarecrow:set_forester"
-            },
-            "interact_text": "action.interact.assign_role",
-            "play_sounds": "random.levelup"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:shears"
+                "test": "is_variant",
+                "value": 2
               },
               "event": "scarecrow:set_rancher"
             },
-            "interact_text": "action.interact.assign_role",
+            "interact_text": "action.interact.change_job",
             "play_sounds": "random.levelup"
           },
           {
             "on_interact": {
               "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:bone_meal"
+                "test": "is_variant",
+                "value": 3
               },
               "event": "scarecrow:set_bonemealer"
             },
-            "interact_text": "action.interact.assign_role",
+            "interact_text": "action.interact.change_job",
             "play_sounds": "random.levelup"
           },
           {
             "on_interact": {
               "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:fishing_rod"
+                "test": "is_variant",
+                "value": 4
               },
               "event": "scarecrow:set_fisher"
             },
-            "interact_text": "action.interact.assign_role",
+            "interact_text": "action.interact.change_job",
             "play_sounds": "random.levelup"
           },
           {
             "on_interact": {
               "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:honeycomb"
+                "test": "is_variant",
+                "value": 5
               },
               "event": "scarecrow:set_beekeeper"
             },
-            "interact_text": "action.interact.assign_role",
+            "interact_text": "action.interact.change_job",
             "play_sounds": "random.levelup"
           },
           {
             "on_interact": {
               "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:iron_sword"
+                "test": "is_variant",
+                "value": 6
               },
               "event": "scarecrow:set_guard"
             },
-            "interact_text": "action.interact.assign_role",
+            "interact_text": "action.interact.change_job",
             "play_sounds": "random.levelup"
           },
           {
             "on_interact": {
               "filters": {
-                "test": "has_equipment",
-                "subject": "player",
-                "domain": "hand",
-                "value": "minecraft:wooden_sword"
+                "test": "is_variant",
+                "value": 7
               },
-              "event": "scarecrow:set_guard"
+              "event": "scarecrow:set_farmer"
             },
-            "interact_text": "action.interact.assign_role",
+            "interact_text": "action.interact.change_job",
             "play_sounds": "random.levelup"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "test": "is_sneaking",
-                "subject": "player",
-                "value": false
-              }
-            },
-            "open_container": true,
-            "interact_text": "action.interact.opencontainer",
-            "play_sounds": "random.pop"
           }
         ]
       }

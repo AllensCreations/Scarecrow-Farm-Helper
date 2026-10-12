@@ -3,5 +3,5 @@ item.custom:scarecrow_helper.name=Scarecrow Farm Helper
 item.spawn_egg.entity.custom:scarecrow_helper.name=Spawn Scarecrow Farm Helper
 pack.name=Scarecrow Farm Helper RP
 pack.description=A cute smiling pumpkin scarecrow that automatically tends crops and deposits harvests into chests!
-action.interact.assign_role=Give Job
-action.interact.opencontainer=Open Backpack
+action.interact.give_job=Give a Job
+action.interact.change_job=Change Job
