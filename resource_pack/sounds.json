@@ -1,0 +1,17 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "custom:scarecrow_helper": {
+        "volume": 0.8,
+        "pitch": 1.2,
+        "events": {
+          "jump": "jump.cloth",
+          "land": "fall.small",
+          "step": "step.cloth",
+          "hurt": "dig.cloth",
+          "death": "block.bamboo_sapling.place"
+        }
+      }
+    }
+  }
+}

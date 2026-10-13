@@ -1,5 +1,5 @@
 # 🎃 Scarecrow Farm Helper (`custom:scarecrow_helper`)
-### *The 7 Chibi Farm Dwarfs — Actual Tools & Job Naming Edition (v1.6.0)*
+### *The 7 Chibi Farm Dwarfs — Sound Effects & Actual Tools Edition (v1.7.0)*
 
 An adorable, zero-maintenance autonomous agricultural companion suite for **Minecraft Bedrock Edition**.
 
@@ -7,7 +7,14 @@ An adorable, zero-maintenance autonomous agricultural companion suite for **Mine
 
 ---
 
-## 🌟 What's New & Upgraded in v1.6.0
+## 🌟 What's New & Upgraded in v1.7.0
+
+- 🔊 **Dynamic Jumping & Movement Sound Effects:**
+  - **Jump Sound:** When traversing steps, hopping up farm blocks, or jumping, a soft straw rustle jump sound (`jump.cloth`) plays cleanly!
+  - **Land Sound:** Landing back on the ground triggers a miniature cushioned impact sound (`fall.small`).
+  - **Footsteps & Pat-Pats:** Walking through your crops makes gentle straw/cloth step sounds (`step.cloth`).
+  - **Hurt & Rustle Sounds:** Interacting or taking damage gives off authentic straw rustle and bamboo/cloth sounds (`dig.cloth`, `block.bamboo_sapling.place`).
+  - **Static Jump Component:** Added `minecraft:jump.static` (power 0.42) so the little dwarfs smoothly hop over tilled soil, crops, and single-block garden steps!
 
 - 🗡️ **Visually Holding Actual Vanilla Minecraft Items:**
   Each dwarf now visibly wields the **authentic vanilla Minecraft item** in their right hand via Bedrock's native item rendering pipeline (`rightItem` locator bone & `controller.render.item_default`):

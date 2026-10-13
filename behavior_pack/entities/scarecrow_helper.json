@@ -146,6 +146,9 @@
         "value": 20
       },
       "minecraft:physics": {},
+      "minecraft:jump.static": {
+        "jump_power": 0.42
+      },
       "minecraft:movement": {
         "value": 0.22
       },

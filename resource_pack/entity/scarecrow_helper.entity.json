@@ -27,12 +27,21 @@
         "wave": "animation.scarecrow.wave",
         "joy": "animation.scarecrow.joy",
         "look_at_target": "animation.scarecrow.look_at_target",
-        "movement_controller": "controller.animation.scarecrow.movement"
+        "movement_controller": "controller.animation.scarecrow.movement",
+        "jump_controller": "controller.animation.scarecrow.jump"
+      },
+      "sound_effects": {
+        "jump": "jump.cloth",
+        "land": "fall.small",
+        "step": "step.cloth",
+        "rustle": "block.bamboo_sapling.place",
+        "happy": "random.orb"
       },
       "scripts": {
         "animate": [
           "look_at_target",
-          "movement_controller"
+          "movement_controller",
+          "jump_controller"
         ]
       },
       "render_controllers": [

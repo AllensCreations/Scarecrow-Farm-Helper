@@ -44,6 +44,41 @@
           "blend_transition": 0.3
         }
       }
+    },
+    "controller.animation.scarecrow.jump": {
+      "initial_state": "on_ground",
+      "states": {
+        "on_ground": {
+          "transitions": [
+            {
+              "in_air": "!query.is_on_ground"
+            }
+          ]
+        },
+        "in_air": {
+          "sound_effects": [
+            "jump"
+          ],
+          "transitions": [
+            {
+              "landing": "query.is_on_ground"
+            }
+          ]
+        },
+        "landing": {
+          "sound_effects": [
+            "land"
+          ],
+          "transitions": [
+            {
+              "on_ground": "query.is_on_ground"
+            },
+            {
+              "in_air": "!query.is_on_ground"
+            }
+          ]
+        }
+      }
     }
   }
 }
