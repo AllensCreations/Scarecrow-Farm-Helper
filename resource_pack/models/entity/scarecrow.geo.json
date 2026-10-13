@@ -196,15 +196,6 @@
           ]
         },
         {
-          "name": "rightItem",
-          "parent": "right_arm",
-          "pivot": [
-            -4.2,
-            3,
-            0
-          ]
-        },
-        {
           "name": "left_leg",
           "parent": "root",
           "pivot": [

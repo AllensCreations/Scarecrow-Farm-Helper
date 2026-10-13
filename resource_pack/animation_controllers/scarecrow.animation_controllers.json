@@ -13,7 +13,13 @@
               "sit": "query.skin_id == 1"
             },
             {
-              "walk": "query.ground_speed > 0.01 && query.skin_id != 1"
+              "spin_attack": "(query.has_target || variable.attack_time > 0) && query.variant == 7"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.05 && query.skin_id != 1"
+            },
+            {
+              "job_action": "query.variant >= 1 && query.variant <= 6 && query.skin_id == 0"
             }
           ],
           "blend_transition": 0.2
@@ -27,10 +33,61 @@
               "sit": "query.skin_id == 1"
             },
             {
-              "idle": "query.ground_speed <= 0.01"
+              "spin_attack": "(query.has_target || variable.attack_time > 0) && query.variant == 7"
+            },
+            {
+              "idle": "query.modified_move_speed <= 0.05"
             }
           ],
           "blend_transition": 0.2
+        },
+        "spin_attack": {
+          "animations": [
+            "spin_attack"
+          ],
+          "transitions": [
+            {
+              "idle": "!query.has_target && variable.attack_time == 0"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.05 && !query.has_target"
+            }
+          ],
+          "blend_transition": 0.15
+        },
+        "job_action": {
+          "animations": [
+            {
+              "farm_harvest": "query.variant == 1"
+            },
+            {
+              "wood_chop": "query.variant == 2"
+            },
+            {
+              "shear_snip": "query.variant == 3"
+            },
+            {
+              "fertilize_scatter": "query.variant == 4"
+            },
+            {
+              "fishing_cast": "query.variant == 5"
+            },
+            {
+              "bee_tend": "query.variant == 6"
+            }
+          ],
+          "transitions": [
+            {
+              "sit": "query.skin_id == 1"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.05"
+            },
+            {
+              "idle": "query.variant == 0 || query.variant == 7"
+            }
+          ],
+          "blend_transition": 0.3
         },
         "sit": {
           "animations": [

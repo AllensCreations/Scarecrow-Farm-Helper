@@ -502,7 +502,7 @@
         },
         "queue_command": {
           "command": [
-            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §cFarmer §7(Holding Golden Hoe)\"}]}"
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §cFarmer 🌾\"}]}"
           ]
         }
       },
@@ -524,7 +524,7 @@
         },
         "queue_command": {
           "command": [
-            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §6Forester §7(Holding Iron Axe)\"}]}"
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §6Forester 🪓\"}]}"
           ]
         }
       },
@@ -546,7 +546,7 @@
         },
         "queue_command": {
           "command": [
-            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §3Rancher §7(Holding Shears)\"}]}"
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §3Rancher 🐑\"}]}"
           ]
         }
       },
@@ -568,7 +568,7 @@
         },
         "queue_command": {
           "command": [
-            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §aBonemealer §7(Holding Bone Meal)\"}]}"
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §aBonemealer 🌱\"}]}"
           ]
         }
       },
@@ -590,7 +590,7 @@
         },
         "queue_command": {
           "command": [
-            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §9Fisher §7(Holding Fishing Rod)\"}]}"
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §9Fisher 🎣\"}]}"
           ]
         }
       },
@@ -612,7 +612,7 @@
         },
         "queue_command": {
           "command": [
-            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §eBeekeeper §7(Holding Honeycomb)\"}]}"
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §eBeekeeper 🐝\"}]}"
           ]
         }
       },
@@ -634,7 +634,7 @@
         },
         "queue_command": {
           "command": [
-            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §7Guard §7(Holding Iron Sword)\"}]}"
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §7Guard 🛡️\"}]}"
           ]
         }
       },

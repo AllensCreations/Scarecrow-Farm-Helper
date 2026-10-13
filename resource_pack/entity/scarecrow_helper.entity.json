@@ -22,7 +22,13 @@
       "animations": {
         "idle": "animation.scarecrow.idle",
         "walk": "animation.scarecrow.walk",
-        "harvest": "animation.scarecrow.harvest",
+        "spin_attack": "animation.scarecrow.spin_attack",
+        "farm_harvest": "animation.scarecrow.farm_harvest",
+        "wood_chop": "animation.scarecrow.wood_chop",
+        "shear_snip": "animation.scarecrow.shear_snip",
+        "fertilize_scatter": "animation.scarecrow.fertilize_scatter",
+        "fishing_cast": "animation.scarecrow.fishing_cast",
+        "bee_tend": "animation.scarecrow.bee_tend",
         "sit": "animation.scarecrow.sit",
         "wave": "animation.scarecrow.wave",
         "joy": "animation.scarecrow.joy",
@@ -45,8 +51,7 @@
         ]
       },
       "render_controllers": [
-        "controller.render.scarecrow",
-        "controller.render.item_default"
+        "controller.render.scarecrow"
       ],
       "spawn_egg": {
         "base_color": "#d9822b",

@@ -37,97 +37,293 @@
     },
     "animation.scarecrow.walk": {
       "loop": true,
-      "anim_time_update": "query.modified_distance_moved * 35.0",
       "bones": {
         "body": {
           "rotation": [
             0,
             0,
-            "math.cos(query.anim_time * 15) * 8.0"
+            "math.sin(query.anim_time * 700) * 7.0"
           ],
           "position": [
             0,
-            "math.abs(math.sin(query.anim_time * 30)) * 1.2",
+            "math.abs(math.sin(query.anim_time * 1400)) * 0.8",
             0
           ]
         },
         "head": {
           "rotation": [
-            "math.abs(math.sin(query.anim_time * 30)) * 5.0",
+            "math.abs(math.sin(query.anim_time * 1400)) * 4.0",
             0,
-            "-math.cos(query.anim_time * 15) * 6.0"
+            "-math.sin(query.anim_time * 700) * 5.0"
           ]
         },
         "left_arm": {
           "rotation": [
-            "math.sin(query.anim_time * 15) * 35.0",
+            "math.cos(query.anim_time * 700) * 25.0",
             0,
-            "18.0 + math.abs(math.sin(query.anim_time * 30)) * 8.0"
+            "14.0 + math.abs(math.sin(query.anim_time * 700)) * 6.0"
           ]
         },
         "right_arm": {
           "rotation": [
-            "-math.sin(query.anim_time * 15) * 35.0",
+            "-math.cos(query.anim_time * 700) * 25.0",
             0,
-            "-18.0 - math.abs(math.sin(query.anim_time * 30)) * 8.0"
+            "-14.0 - math.abs(math.sin(query.anim_time * 700)) * 6.0"
           ]
         },
         "left_leg": {
           "rotation": [
-            "-math.sin(query.anim_time * 15) * 45.0",
+            "-math.sin(query.anim_time * 700) * 35.0",
             0,
             0
           ],
           "position": [
             0,
-            "math.max(0, math.sin(query.anim_time * 15)) * 1.2",
+            "math.max(0, math.sin(query.anim_time * 700)) * 1.0",
             0
           ]
         },
         "right_leg": {
           "rotation": [
-            "math.sin(query.anim_time * 15) * 45.0",
+            "math.sin(query.anim_time * 700) * 35.0",
             0,
             0
           ],
           "position": [
             0,
-            "math.max(0, -math.sin(query.anim_time * 15)) * 1.2",
+            "math.max(0, -math.sin(query.anim_time * 700)) * 1.0",
             0
           ]
         }
       }
     },
-    "animation.scarecrow.harvest": {
-      "loop": false,
-      "animation_length": 0.4,
+    "animation.scarecrow.spin_attack": {
+      "loop": true,
+      "animation_length": 0.5,
       "bones": {
         "body": {
           "rotation": {
             "0.0": [0, 0, 0],
-            "0.2": [32, 0, 0],
-            "0.4": [0, 0, 0]
+            "0.25": [0, 180, 0],
+            "0.5": [0, 360, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.25": [0, 1.2, 0],
+            "0.5": [0, 0, 0]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0.0": [-10, 0, 0],
+            "0.25": [-10, 0, 0],
+            "0.5": [-10, 0, 0]
+          }
+        },
+        "left_arm": {
+          "rotation": {
+            "0.0": [0, 0, 85],
+            "0.25": [0, 0, 95],
+            "0.5": [0, 0, 85]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0.0": [0, 0, -85],
+            "0.25": [0, 0, -95],
+            "0.5": [0, 0, -85]
+          }
+        }
+      }
+    },
+    "animation.scarecrow.farm_harvest": {
+      "loop": true,
+      "animation_length": 1.0,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.3": [28, 0, 0],
+            "0.7": [32, 0, 0],
+            "1.0": [0, 0, 0]
           }
         },
         "head": {
           "rotation": {
             "0.0": [0, 0, 0],
-            "0.2": [22, 0, 0],
-            "0.4": [0, 0, 0]
+            "0.3": [20, 0, 0],
+            "0.7": [24, 0, 0],
+            "1.0": [0, 0, 0]
           }
         },
         "left_arm": {
           "rotation": {
             "0.0": [0, 0, 10],
-            "0.2": [-65, 20, 0],
-            "0.4": [0, 0, 10]
+            "0.3": [-60, 15, 0],
+            "0.7": [-75, 20, 0],
+            "1.0": [0, 0, 10]
           }
         },
         "right_arm": {
           "rotation": {
             "0.0": [0, 0, -10],
-            "0.2": [-65, -20, 0],
-            "0.4": [0, 0, -10]
+            "0.3": [-60, -15, 0],
+            "0.7": [-75, -20, 0],
+            "1.0": [0, 0, -10]
+          }
+        }
+      }
+    },
+    "animation.scarecrow.wood_chop": {
+      "loop": true,
+      "animation_length": 0.8,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [-12, 0, 0],
+            "0.4": [-18, 0, 0],
+            "0.6": [22, 0, 0],
+            "0.8": [-12, 0, 0]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0.0": [-10, 0, 0],
+            "0.6": [15, 0, 0],
+            "0.8": [-10, 0, 0]
+          }
+        },
+        "left_arm": {
+          "rotation": {
+            "0.0": [-120, -15, 10],
+            "0.4": [-150, -15, 10],
+            "0.6": [-30, -10, 10],
+            "0.8": [-120, -15, 10]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0.0": [-120, 15, -10],
+            "0.4": [-150, 15, -10],
+            "0.6": [-30, 10, -10],
+            "0.8": [-120, 15, -10]
+          }
+        }
+      }
+    },
+    "animation.scarecrow.shear_snip": {
+      "loop": true,
+      "animation_length": 0.6,
+      "bones": {
+        "left_arm": {
+          "rotation": {
+            "0.0": [-45, 15, 0],
+            "0.2": [-50, -5, 0],
+            "0.4": [-45, 15, 0],
+            "0.6": [-50, -5, 0]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0.0": [-45, -15, 0],
+            "0.2": [-50, 5, 0],
+            "0.4": [-45, -15, 0],
+            "0.6": [-50, 5, 0]
+          }
+        }
+      }
+    },
+    "animation.scarecrow.fertilize_scatter": {
+      "loop": true,
+      "animation_length": 1.2,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.4": [-8, 0, 0],
+            "0.8": [10, 0, 0],
+            "1.2": [0, 0, 0]
+          }
+        },
+        "left_arm": {
+          "rotation": {
+            "0.0": [-20, 0, 15],
+            "0.4": [-110, -20, 30],
+            "0.8": [-60, -10, 20],
+            "1.2": [-20, 0, 15]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0.0": [-20, 0, -15],
+            "0.4": [-110, 20, -30],
+            "0.8": [-60, 10, -20],
+            "1.2": [-20, 0, -15]
+          }
+        }
+      }
+    },
+    "animation.scarecrow.fishing_cast": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "body": {
+          "rotation": [3, 0, 0]
+        },
+        "left_arm": {
+          "rotation": {
+            "0.0": [-65, -10, 0],
+            "1.0": [-70, -10, 0],
+            "2.0": [-65, -10, 0]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0.0": [-65, 10, 0],
+            "1.0": [-70, 10, 0],
+            "2.0": [-65, 10, 0]
+          }
+        }
+      }
+    },
+    "animation.scarecrow.bee_tend": {
+      "loop": true,
+      "animation_length": 1.4,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.35": [6, 10, 0],
+            "0.7": [0, 0, 0],
+            "1.05": [6, -10, 0],
+            "1.4": [0, 0, 0]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.35": [-5, -8, 0],
+            "0.7": [0, 0, 0],
+            "1.05": [-5, 8, 0],
+            "1.4": [0, 0, 0]
+          }
+        },
+        "left_arm": {
+          "rotation": {
+            "0.0": [0, 0, 15],
+            "0.35": [-35, 10, 25],
+            "0.7": [0, 0, 15],
+            "1.05": [-25, -10, 20],
+            "1.4": [0, 0, 15]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0.0": [0, 0, -15],
+            "0.35": [-25, 10, -20],
+            "0.7": [0, 0, -15],
+            "1.05": [-35, -10, -25],
+            "1.4": [0, 0, -15]
           }
         }
       }
