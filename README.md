@@ -1,5 +1,5 @@
 # 🎃 Scarecrow Farm Helper (`custom:scarecrow_helper`)
-### *The 7 Chibi Farm Dwarfs — Sound Effects & Actual Tools Edition (v1.7.0)*
+### *The 7 Chibi Farm Dwarfs — Active Autonomous Jobs Edition (v1.8.0)*
 
 An adorable, zero-maintenance autonomous agricultural companion suite for **Minecraft Bedrock Edition**.
 
@@ -7,32 +7,35 @@ An adorable, zero-maintenance autonomous agricultural companion suite for **Mine
 
 ---
 
-## 🌟 What's New & Upgraded in v1.7.0
+## 🌟 What's New & Upgraded in v1.8.0
+
+- 🏃‍♂️ **Distance-Synced Walking Animation (FIXED):**
+  - Uses `anim_time_update: query.modified_distance_moved * 35.0` to lock the leg swinging speed directly to how far the dwarf travels!
+  - No more frozen/missing walk animation, micro-stuttering, or foot sliding.
+  - The movement controller seamlessly switches to walking as soon as `query.ground_speed > 0.01`.
+
+- ⚡ **Autonomous Active Jobs for ALL 7 Dwarfs:**
+  - 🌾 **Farmer**: Equipped with starting seeds + auto-refill seed timer (`scarecrow:refill_seeds`) and green harvest particles so replanting **never stops**.
+  - 🪓 **Forester**: Scavenges dropped logs, sticks, apples, saplings, and produces periodic wood bundles.
+  - 🐑 **Rancher**: Follows sheep herds (`minecraft:behavior.follow_mob`), auto-gathers wool, and tends livestock.
+  - 🌱 **Bonemealer**: Emits periodic growth pulses with bone meal particles and sound effects (`scarecrow:fertilize_pulse`) to speed up crop development.
+  - 🎣 **Fisher**: Wanders to watersides (`minecraft:behavior.move_to_water`) and catches fish into their inventory.
+  - 🐝 **Beekeeper**: Follows bees and visits flowers, accelerates pollination, and harvests honeycomb.
+  - 🛡️ **Guard**: Attacks hostile monsters (Zombies, Skeletons, Spiders, Creepers) using an Iron Sword (`damage: 6`) to protect your crops and animals!
+
+- 🌅 **Day/Night Work & Rest Schedule:**
+  - Built-in `minecraft:environment_sensor` triggers daytime work (`is_daytime: true`) and cozy nighttime resting (`is_daytime: false`), where dwarfs sit down cutely until dawn!
+  - Work radius restricted to 16 blocks around their workstation so they never wander away from your farm.
 
 - 🔊 **Dynamic Jumping & Movement Sound Effects:**
-  - **Jump Sound:** When traversing steps, hopping up farm blocks, or jumping, a soft straw rustle jump sound (`jump.cloth`) plays cleanly!
-  - **Land Sound:** Landing back on the ground triggers a miniature cushioned impact sound (`fall.small`).
-  - **Footsteps & Pat-Pats:** Walking through your crops makes gentle straw/cloth step sounds (`step.cloth`).
-  - **Hurt & Rustle Sounds:** Interacting or taking damage gives off authentic straw rustle and bamboo/cloth sounds (`dig.cloth`, `block.bamboo_sapling.place`).
-  - **Static Jump Component:** Added `minecraft:jump.static` (power 0.42) so the little dwarfs smoothly hop over tilled soil, crops, and single-block garden steps!
+  - Soft straw rustle jump sound (`jump.cloth`), cushioned land impact (`fall.small`), and gentle footsteps (`step.cloth`).
+  - Added `minecraft:jump.static` (power 0.42) for smooth garden hopping.
 
 - 🗡️ **Visually Holding Actual Vanilla Minecraft Items:**
-  Each dwarf now visibly wields the **authentic vanilla Minecraft item** in their right hand via Bedrock's native item rendering pipeline (`rightItem` locator bone & `controller.render.item_default`):
-  | Dwarf Role | Beanie Color | Actual Held Minecraft Item | Specialty |
-  | :--- | :--- | :--- | :--- |
-  | 🌼 **Jobless** | Natural Straw | `minecraft:dandelion` | Peaceful garden companion; waddles and rests. |
-  | 🌾 **Farmer** | 🔴 Red | `minecraft:golden_hoe` | Harvests mature crops and replants seeds! |
-  | 🪓 **Forester** | 🟤 Brown | `minecraft:iron_axe` | Gathers dropped wood, saplings, apples, and sticks. |
-  | 🐑 **Rancher** | 🔵 Cyan | `minecraft:shears` | Tends sheep and farm animals. |
-  | 🌱 **Bonemealer** | 🟢 Green | `minecraft:bone_meal` | Nurtures crops with growth acceleration. |
-  | 🎣 **Fisher** | 🟦 Blue | `minecraft:fishing_rod` | Fish tender by ponds. |
-  | 🐝 **Beekeeper** | 🟡 Yellow | `minecraft:honeycomb` | Cares for beehives and nests. |
-  | 🛡️ **Guard** | ⚪ Grey | `minecraft:iron_sword` | Farm protector against pests and monsters. |
+  - Golden Hoe, Iron Axe, Shears, Bone Meal, Fishing Rod, Honeycomb, Iron Sword, Yellow Dandelion held natively in hand.
 
-- 🏷️ **Interactive Job Display & Actionbar Announcements:**
-  - **Explicit Button Labels:** Approaching a scarecrow shows clear interactive action prompts with job names and emojis (e.g. `Job: Farmer 🌾`, `Job: Forester 🪓`, `Job: Rancher 🐑`, etc.).
-  - **Instant Actionbar Banner:** Whenever you assign or cycle a job, an on-screen title alert announces their role and held tool (e.g. `§6[Scarecrow] §eAssigned: §cFarmer §7(Holding Golden Hoe)`).
-  - **Always Visible Name Tags:** Full support for Minecraft Name Tags with `always_show: true` so custom names are always readable above their head.
+- 🏷️ **Clear Job Naming & Interactive Buttons:**
+  - Interactive touch prompts with emoji titles + actionbar role assignment announcements.
 
 - 🧸 **0.8x Mini Chibi Scale:**
   - Scaled into a miniature **1-block-tall garden dwarf / fairy helper** with authentic Hay Bale straw weave & Carved Pumpkin styling!

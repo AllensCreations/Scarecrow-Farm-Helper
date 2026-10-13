@@ -13,10 +13,10 @@
               "sit": "query.skin_id == 1"
             },
             {
-              "walk": "query.ground_speed > 0.05 && query.skin_id != 1"
+              "walk": "query.ground_speed > 0.01 && query.skin_id != 1"
             }
           ],
-          "blend_transition": 0.3
+          "blend_transition": 0.2
         },
         "walk": {
           "animations": [
@@ -27,7 +27,7 @@
               "sit": "query.skin_id == 1"
             },
             {
-              "idle": "query.ground_speed <= 0.05"
+              "idle": "query.ground_speed <= 0.01"
             }
           ],
           "blend_transition": 0.2
