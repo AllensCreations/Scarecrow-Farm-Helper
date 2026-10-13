@@ -42,6 +42,9 @@
         "minecraft:variant": {
           "value": 1
         },
+        "minecraft:equipment": {
+          "table": "loot_tables/equipment/farmer.json"
+        },
         "minecraft:behavior.harvest_farm_block": {
           "priority": 2,
           "max_seconds_before_search": 1,
@@ -61,6 +64,9 @@
         "minecraft:variant": {
           "value": 2
         },
+        "minecraft:equipment": {
+          "table": "loot_tables/equipment/forester.json"
+        },
         "minecraft:behavior.pickup_items": {
           "priority": 3,
           "max_dist": 8,
@@ -73,26 +79,41 @@
       "scarecrow:rancher": {
         "minecraft:variant": {
           "value": 3
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/equipment/rancher.json"
         }
       },
       "scarecrow:bonemealer": {
         "minecraft:variant": {
           "value": 4
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/equipment/bonemealer.json"
         }
       },
       "scarecrow:fisher": {
         "minecraft:variant": {
           "value": 5
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/equipment/fisher.json"
         }
       },
       "scarecrow:beekeeper": {
         "minecraft:variant": {
           "value": 6
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/equipment/beekeeper.json"
         }
       },
       "scarecrow:guard": {
         "minecraft:variant": {
           "value": 7
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/equipment/guard.json"
         }
       }
     },
@@ -105,6 +126,9 @@
       },
       "minecraft:skin_id": {
         "value": 0
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/equipment/jobless.json"
       },
       "minecraft:type_family": {
         "family": [
@@ -152,7 +176,7 @@
         "table": "loot_tables/entities/scarecrow_helper.json"
       },
       "minecraft:nameable": {
-        "always_show": false,
+        "always_show": true,
         "allow_name_tag_renaming": true
       },
       "minecraft:persistent": {},
@@ -190,7 +214,7 @@
               },
               "event": "scarecrow:set_farmer"
             },
-            "interact_text": "action.interact.give_job",
+            "interact_text": "action.interact.give_job_farmer",
             "play_sounds": "random.levelup"
           },
           {
@@ -201,7 +225,7 @@
               },
               "event": "scarecrow:set_forester"
             },
-            "interact_text": "action.interact.change_job",
+            "interact_text": "action.interact.give_job_forester",
             "play_sounds": "random.levelup"
           },
           {
@@ -212,7 +236,7 @@
               },
               "event": "scarecrow:set_rancher"
             },
-            "interact_text": "action.interact.change_job",
+            "interact_text": "action.interact.give_job_rancher",
             "play_sounds": "random.levelup"
           },
           {
@@ -223,7 +247,7 @@
               },
               "event": "scarecrow:set_bonemealer"
             },
-            "interact_text": "action.interact.change_job",
+            "interact_text": "action.interact.give_job_bonemealer",
             "play_sounds": "random.levelup"
           },
           {
@@ -234,7 +258,7 @@
               },
               "event": "scarecrow:set_fisher"
             },
-            "interact_text": "action.interact.change_job",
+            "interact_text": "action.interact.give_job_fisher",
             "play_sounds": "random.levelup"
           },
           {
@@ -245,7 +269,7 @@
               },
               "event": "scarecrow:set_beekeeper"
             },
-            "interact_text": "action.interact.change_job",
+            "interact_text": "action.interact.give_job_beekeeper",
             "play_sounds": "random.levelup"
           },
           {
@@ -256,7 +280,7 @@
               },
               "event": "scarecrow:set_guard"
             },
-            "interact_text": "action.interact.change_job",
+            "interact_text": "action.interact.give_job_guard",
             "play_sounds": "random.levelup"
           },
           {
@@ -267,7 +291,7 @@
               },
               "event": "scarecrow:set_farmer"
             },
-            "interact_text": "action.interact.change_job",
+            "interact_text": "action.interact.give_job_farmer",
             "play_sounds": "random.levelup"
           }
         ]
@@ -320,6 +344,11 @@
           "component_groups": [
             "scarecrow:farmer"
           ]
+        },
+        "queue_command": {
+          "command": [
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §cFarmer §7(Holding Golden Hoe)\"}]}"
+          ]
         }
       },
       "scarecrow:set_forester": {
@@ -336,6 +365,11 @@
         "add": {
           "component_groups": [
             "scarecrow:forester"
+          ]
+        },
+        "queue_command": {
+          "command": [
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §6Forester §7(Holding Iron Axe)\"}]}"
           ]
         }
       },
@@ -354,6 +388,11 @@
           "component_groups": [
             "scarecrow:rancher"
           ]
+        },
+        "queue_command": {
+          "command": [
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §3Rancher §7(Holding Shears)\"}]}"
+          ]
         }
       },
       "scarecrow:set_bonemealer": {
@@ -370,6 +409,11 @@
         "add": {
           "component_groups": [
             "scarecrow:bonemealer"
+          ]
+        },
+        "queue_command": {
+          "command": [
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §aBonemealer §7(Holding Bone Meal)\"}]}"
           ]
         }
       },
@@ -388,6 +432,11 @@
           "component_groups": [
             "scarecrow:fisher"
           ]
+        },
+        "queue_command": {
+          "command": [
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §9Fisher §7(Holding Fishing Rod)\"}]}"
+          ]
         }
       },
       "scarecrow:set_beekeeper": {
@@ -405,6 +454,11 @@
           "component_groups": [
             "scarecrow:beekeeper"
           ]
+        },
+        "queue_command": {
+          "command": [
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §eBeekeeper §7(Holding Honeycomb)\"}]}"
+          ]
         }
       },
       "scarecrow:set_guard": {
@@ -421,6 +475,11 @@
         "add": {
           "component_groups": [
             "scarecrow:guard"
+          ]
+        },
+        "queue_command": {
+          "command": [
+            "titleraw @p actionbar {\"rawtext\":[{\"text\":\"§6[Scarecrow] §eAssigned: §7Guard §7(Holding Iron Sword)\"}]}"
           ]
         }
       }

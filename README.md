@@ -1,5 +1,5 @@
 # 🎃 Scarecrow Farm Helper (`custom:scarecrow_helper`)
-### *The 7 Chibi Farm Dwarfs — Mini Tools Edition (v1.5.0)*
+### *The 7 Chibi Farm Dwarfs — Actual Tools & Job Naming Edition (v1.6.0)*
 
 An adorable, zero-maintenance autonomous agricultural companion suite for **Minecraft Bedrock Edition**.
 
@@ -7,39 +7,34 @@ An adorable, zero-maintenance autonomous agricultural companion suite for **Mine
 
 ---
 
-## 🌟 What's New & Upgraded in v1.5.0
+## 🌟 What's New & Upgraded in v1.6.0
+
+- 🗡️ **Visually Holding Actual Vanilla Minecraft Items:**
+  Each dwarf now visibly wields the **authentic vanilla Minecraft item** in their right hand via Bedrock's native item rendering pipeline (`rightItem` locator bone & `controller.render.item_default`):
+  | Dwarf Role | Beanie Color | Actual Held Minecraft Item | Specialty |
+  | :--- | :--- | :--- | :--- |
+  | 🌼 **Jobless** | Natural Straw | `minecraft:dandelion` | Peaceful garden companion; waddles and rests. |
+  | 🌾 **Farmer** | 🔴 Red | `minecraft:golden_hoe` | Harvests mature crops and replants seeds! |
+  | 🪓 **Forester** | 🟤 Brown | `minecraft:iron_axe` | Gathers dropped wood, saplings, apples, and sticks. |
+  | 🐑 **Rancher** | 🔵 Cyan | `minecraft:shears` | Tends sheep and farm animals. |
+  | 🌱 **Bonemealer** | 🟢 Green | `minecraft:bone_meal` | Nurtures crops with growth acceleration. |
+  | 🎣 **Fisher** | 🟦 Blue | `minecraft:fishing_rod` | Fish tender by ponds. |
+  | 🐝 **Beekeeper** | 🟡 Yellow | `minecraft:honeycomb` | Cares for beehives and nests. |
+  | 🛡️ **Guard** | ⚪ Grey | `minecraft:iron_sword` | Farm protector against pests and monsters. |
+
+- 🏷️ **Interactive Job Display & Actionbar Announcements:**
+  - **Explicit Button Labels:** Approaching a scarecrow shows clear interactive action prompts with job names and emojis (e.g. `Job: Farmer 🌾`, `Job: Forester 🪓`, `Job: Rancher 🐑`, etc.).
+  - **Instant Actionbar Banner:** Whenever you assign or cycle a job, an on-screen title alert announces their role and held tool (e.g. `§6[Scarecrow] §eAssigned: §cFarmer §7(Holding Golden Hoe)`).
+  - **Always Visible Name Tags:** Full support for Minecraft Name Tags with `always_show: true` so custom names are always readable above their head.
 
 - 🧸 **0.8x Mini Chibi Scale:**
-  - Scaled down into an adorable **1-block-tall garden dwarf / fairy helper**! Perfect miniature proportions that look cute running around your crops.
-
-- 🪓 **7 3D Held Job Tools & Props:**
-  Each dwarf visibly holds a miniature tool in their right hand that naturally swings with their animations:
-  | Dwarf Role | Color & Beanie | 3D Held Hand Prop | Specialty |
-  | :--- | :--- | :--- | :--- |
-  | 🌼 **Jobless** | Natural Straw | **Yellow Dandelion Flower** | Peaceful garden companion; waddles and rests. |
-  | 🌾 **Farmer** | 🔴 Red | **Golden Hoe** | Harvests mature crops and replants seeds! |
-  | 🪓 **Forester** | 🟤 Brown | **Lumberjack Axe** | Gathers dropped wood, saplings, apples, and sticks. |
-  | 🐑 **Rancher** | 🔵 Cyan | **Iron Shears** | Tends sheep and farm animals. |
-  | 🌱 **Bonemealer** | 🟢 Green | **Green Leaf Sprout** | Nurtures crops with growth acceleration. |
-  | 🎣 **Fisher** | 🟦 Blue | **Bamboo Fishing Rod** | Fish tender by ponds. |
-  | 🐝 **Beekeeper** | 🟡 Yellow | **Honey Pot Jar** | Cares for beehives and nests. |
-  | 🛡️ **Guard** | ⚪ Grey | **Iron Sword** | Farm protector against pests. |
+  - Scaled into a miniature **1-block-tall garden dwarf / fairy helper** with authentic Hay Bale straw weave & Carved Pumpkin styling!
 
 - 🎩 **100% Solid Hat Back Fix:**
-  - Completely repainted 360° UV mapping for all hat faces, closing all transparent gaps and eliminating back-face inverted rendering and Z-fighting!
-
-- 🌾 **Expanded Food Agriculture & Berry Immunity:**
-  - Farm row crops (Wheat, Carrots, Potatoes, Beetroot).
-  - Tends Melons, Pumpkins, Sugarcane, Bamboo, Mushrooms, and Nether Wart.
-  - Immune to contact/berry prickle damage when harvesting Sweet Berry bushes!
-  - Excess seeds can be funneled into nearby **Composters** for free Bone Meal!
-
-- 🔘 **Interactive "Give a Job" & "Change Job" Cycling:**
-  - Walk up and tap **"Give a Job"** to promote to Farmer!
-  - Tap **"Change Job"** to cycle through all 7 dwarf roles with a chime sound!
+  - Full 360° UV texture mapping for all hat faces—no transparent gaps, inverted rendering, or Z-fighting!
 
 - 🎒 **Hopper Auto-Siphon Storage:**
-  - Place a **Hopper** underneath to auto-pull all harvested crops into chests without any UI popup interruptions!
+  - Place a **Hopper** underneath to auto-pull all harvested crops into chests without UI popup interruptions!
 
 ---
 

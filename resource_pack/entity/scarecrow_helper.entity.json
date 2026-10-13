@@ -36,7 +36,8 @@
         ]
       },
       "render_controllers": [
-        "controller.render.scarecrow"
+        "controller.render.scarecrow",
+        "controller.render.item_default"
       ],
       "spawn_egg": {
         "base_color": "#d9822b",
